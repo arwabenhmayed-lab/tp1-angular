@@ -1,10 +1,11 @@
-<section class="liste-cours">
+<section class="liste-cours" aria-label="Catalogue des cours">
   @for (c of cours; track c.titre) {
-    <article class="carte-cours">
+    <article class="carte-cours" [class.actif]="c === coursActif" (click)="selectionner(c)" tabindex="0" (keydown.enter)="selectionner(c)" (keydown.space)="selectionner(c); $event.preventDefault()">
       <h2>{{ c.titre }}</h2>
       <p>Catégorie : {{ c.categorie }}</p>
       <p>Durée : {{ c.duree }}</p>
       <p>Places disponibles : {{ c.places }}</p>
+      <span class="action">Cliquer pour voir le détail →</span>
     </article>
   }
 </section>

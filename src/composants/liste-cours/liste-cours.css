@@ -1,0 +1,22 @@
+.liste-cours {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+.carte-cours {
+  padding: 1.2rem;
+  border: 1px solid #d8dce5;
+  border-radius: 14px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color .18s ease, background-color .18s ease, transform .18s ease;
+}
+.carte-cours:hover { transform: translateY(-2px); border-color: #dd0031; }
+.carte-cours:focus-visible { outline: 3px solid #dd0031; outline-offset: 3px; }
+.carte-cours.actif {
+  border: 2px solid #dd0031;
+  background-color: #fdecef;
+}
+.carte-cours h2 { margin-top: 0; font-size: 1.15rem; }
+.carte-cours p { color: #454b59; margin: .45rem 0; }
+.action { display: inline-block; margin-top: .6rem; color: #b40028; font-size: .9rem; font-weight: 600; }

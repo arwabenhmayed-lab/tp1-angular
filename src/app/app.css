@@ -1,1 +1,5 @@
-main { min-height: 50vh; }
+.contenu { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; padding: 2rem 0 3rem; }
+.intro { margin-bottom: 1.75rem; }
+.intro .sur-titre { color: #b40028; font-size: .75rem; font-weight: 800; letter-spacing: .13em; }
+.intro h1 { margin: .3rem 0; font-size: clamp(1.8rem, 4vw, 2.7rem); }
+.intro p:last-child { color: #606777; }
