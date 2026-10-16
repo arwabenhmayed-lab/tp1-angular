@@ -22,7 +22,10 @@ export class ListeCoursComponent {
     { titre: 'TypeScript pour développeurs', categorie: 'Langage', duree: '8h', places: 15 },
     { titre: 'API REST avec Node.js', categorie: 'Back-end', duree: '16h', places: 6 },
     { titre: 'Git et travail collaboratif', categorie: 'Outils', duree: '4h', places: 20 }
-  ];
+  ]
+  recherche = '';
+tri: 'asc' | 'desc' = 'asc';
+// ... coursActif, coursSelectionne, cours, selectionner() inchangés;
 
   selectionner(c: Cours): void {
     this.coursActif = c;
