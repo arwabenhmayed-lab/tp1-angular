@@ -1,5 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { EnTete } from './en-tete';
+declare const describe: (name: string, definition: () => void) => void;
+declare const beforeEach: (action: () => void | Promise<void>) => void;
+declare const it: (name: string, action: () => void | Promise<void>) => void;
+declare const expect: (actual: unknown) => { toBeTruthy(): void };
 
 describe('EnTete', () => {
   let component: EnTete;

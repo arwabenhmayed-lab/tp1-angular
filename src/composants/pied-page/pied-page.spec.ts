@@ -1,5 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { PiedPage } from './pied-page';
+declare const describe: (name: string, definition: () => void) => void;
+declare const beforeEach: (action: () => void | Promise<void>) => void;
+declare const it: (name: string, action: () => void | Promise<void>) => void;
+declare const expect: (actual: unknown) => { toBeTruthy(): void };
 
 describe('PiedPage', () => {
   let component: PiedPage;
